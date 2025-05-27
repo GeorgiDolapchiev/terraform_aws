@@ -39,3 +39,10 @@ variable "aws_secret_access_key" {
     sensitive = true
     description = "AWS Secret Access Key"
 }
+variable "ingress_ports" {
+    description = "List Of Ingress Ports"
+    type = list(number)
+    default = [ 22, 80, 8080 ]
+
+
+}
